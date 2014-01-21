@@ -33,4 +33,7 @@ SampleApp::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  #Sppen up test by lowering bcryps's cost function.
+  ActiveModel::SecurePassword.min_cost = true
 end
